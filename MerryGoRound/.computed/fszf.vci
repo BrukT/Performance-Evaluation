@@ -1,0 +1,37 @@
+                                                                
+version 2
+run Test3-6-20190103-01:28:39-22400
+attr configname Test3
+attr datetime 20190103-01:28:39
+attr experiment Test3
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Playground
+attr processid 22400
+attr repetition 6
+attr replication #6
+attr resultdir results
+attr runnumber 6
+attr seedset 6
+param **.entry.Q 10s
+param **.owner.threshold 1
+param **.in_mgr.seat_num 10
+param **.in_mgr.ride_time 5s
+param **.entry.meanInterArrival 0.5s
+param **.entry.Q 10s
+param **.owner.threshold 10
+param **.entry.Q 10s
+param **.owner.threshold 1
+param **.in_mgr.seat_num 10
+param **.in_mgr.ride_time 5s
+param **.entry.meanInterArrival 0.5s
+param **.entry.Q 10s
+param **.owner.threshold 10
+
+vector 0 Playground.mgr.owner aggregator(mean(earnigPerTime:vector);mean(earnigPerTime:vector);mean(earnigPerTime:vector);mean(earnigPerTime:vector);mean(earnigPerTime:vector);mean(earnigPerTime:vector);mean(earnigPerTime:vector);mean(earnigPerTime:vector);mean(earnigPerTime:vector);mean(earnigPerTime:vector)) ETV
+attr intepolationmode none
+attr source earning
+attr title "earning per unit of time, vector"
+attr type double
